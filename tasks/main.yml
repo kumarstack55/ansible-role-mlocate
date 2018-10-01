@@ -1,0 +1,11 @@
+---
+- name: Ensure mlocate installed
+  become: yes
+  yum:
+    name: mlocate
+
+- name: Ensure database exists
+  become: yes
+  shell: updatedb
+  args:
+    creates: /var/lib/mlocate/mlocate.db
