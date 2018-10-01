@@ -1,5 +1,5 @@
-ansible-role-keymap
-===================
+ansible-role-mlocate
+====================
 
 ansible role to install and update it's database if no database
 exists.
